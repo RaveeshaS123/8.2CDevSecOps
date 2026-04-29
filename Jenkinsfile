@@ -80,5 +80,11 @@ Build URL: ${env.BUILD_URL}
                 }
             }
         }
+        stage('GitHub Trigger Verification') {
+    steps {
+        echo 'Pipeline automatically triggered from a GitHub commit via Poll SCM. Code retrieved from repository hosted on GitHub.'
+    }
+}
+
     }
 }
